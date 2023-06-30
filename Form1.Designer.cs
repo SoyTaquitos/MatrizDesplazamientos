@@ -56,6 +56,8 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.filaInferiorIzqderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colunaInferiorIzqderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.filaInferiorDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +84,9 @@
             this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem,
             this.toolStripSeparator2,
             this.filaInferiorIzqderToolStripMenuItem,
-            this.colunaInferiorIzqderToolStripMenuItem});
+            this.colunaInferiorIzqderToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.filaInferiorDerizqToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.matriz1ToolStripMenuItem.Text = "Desplazamientos";
@@ -270,6 +274,18 @@
             this.colunaInferiorIzqderToolStripMenuItem.Text = "Columna Inferior izq-der";
             this.colunaInferiorIzqderToolStripMenuItem.Click += new System.EventHandler(this.colunaInferiorIzqderToolStripMenuItem_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(291, 6);
+            // 
+            // filaInferiorDerizqToolStripMenuItem
+            // 
+            this.filaInferiorDerizqToolStripMenuItem.Name = "filaInferiorDerizqToolStripMenuItem";
+            this.filaInferiorDerizqToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.filaInferiorDerizqToolStripMenuItem.Text = "Fila Inferior der-izq";
+            this.filaInferiorDerizqToolStripMenuItem.Click += new System.EventHandler(this.filaInferiorDerizqToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,6 +345,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem filaInferiorIzqderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colunaInferiorIzqderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem filaInferiorDerizqToolStripMenuItem;
     }
 }
 
