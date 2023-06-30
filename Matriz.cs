@@ -143,5 +143,15 @@ namespace MatrizDesplazamientos
                 }
             }
         }
+
+        public void DesplazamientoDiagonalPrincipal()
+        {
+            int i = 1;
+            for (int d = 1; d <= f; d++)
+            {
+                m[d, d] = i++;
+            }
+        }
+        
     }
 }

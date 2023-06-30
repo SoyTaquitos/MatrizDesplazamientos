@@ -59,6 +59,8 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.filaInferiorDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.columnaInferiorDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.diagonalPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +90,9 @@
             this.colunaInferiorIzqderToolStripMenuItem,
             this.toolStripSeparator4,
             this.filaInferiorDerizqToolStripMenuItem,
-            this.columnaInferiorDerizqToolStripMenuItem});
+            this.columnaInferiorDerizqToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.diagonalPrincipalToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.matriz1ToolStripMenuItem.Text = "Desplazamientos";
@@ -295,6 +299,18 @@
             this.columnaInferiorDerizqToolStripMenuItem.Text = "Columna Inferior der-izq";
             this.columnaInferiorDerizqToolStripMenuItem.Click += new System.EventHandler(this.columnaInferiorDerizqToolStripMenuItem_Click);
             // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(291, 6);
+            // 
+            // diagonalPrincipalToolStripMenuItem
+            // 
+            this.diagonalPrincipalToolStripMenuItem.Name = "diagonalPrincipalToolStripMenuItem";
+            this.diagonalPrincipalToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.diagonalPrincipalToolStripMenuItem.Text = "Diagonal Principal";
+            this.diagonalPrincipalToolStripMenuItem.Click += new System.EventHandler(this.diagonalPrincipalToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,6 +373,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem filaInferiorDerizqToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem columnaInferiorDerizqToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem diagonalPrincipalToolStripMenuItem;
     }
 }
 
