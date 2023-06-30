@@ -61,6 +61,7 @@
             this.columnaInferiorDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.diagonalPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diagonalPrincipalDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +93,8 @@
             this.filaInferiorDerizqToolStripMenuItem,
             this.columnaInferiorDerizqToolStripMenuItem,
             this.toolStripSeparator5,
-            this.diagonalPrincipalToolStripMenuItem});
+            this.diagonalPrincipalToolStripMenuItem,
+            this.diagonalPrincipalDerizqToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.matriz1ToolStripMenuItem.Text = "Desplazamientos";
@@ -308,8 +310,15 @@
             // 
             this.diagonalPrincipalToolStripMenuItem.Name = "diagonalPrincipalToolStripMenuItem";
             this.diagonalPrincipalToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
-            this.diagonalPrincipalToolStripMenuItem.Text = "Diagonal Principal";
+            this.diagonalPrincipalToolStripMenuItem.Text = "Diagonal Principal izq-der";
             this.diagonalPrincipalToolStripMenuItem.Click += new System.EventHandler(this.diagonalPrincipalToolStripMenuItem_Click);
+            // 
+            // diagonalPrincipalDerizqToolStripMenuItem
+            // 
+            this.diagonalPrincipalDerizqToolStripMenuItem.Name = "diagonalPrincipalDerizqToolStripMenuItem";
+            this.diagonalPrincipalDerizqToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.diagonalPrincipalDerizqToolStripMenuItem.Text = "Diagonal Principal der-izq";
+            this.diagonalPrincipalDerizqToolStripMenuItem.Click += new System.EventHandler(this.diagonalPrincipalDerizqToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -375,6 +384,7 @@
         private System.Windows.Forms.ToolStripMenuItem columnaInferiorDerizqToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem diagonalPrincipalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diagonalPrincipalDerizqToolStripMenuItem;
     }
 }
 

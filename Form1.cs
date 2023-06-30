@@ -85,5 +85,11 @@ namespace MatrizDesplazamientos
             m1.DesplazamientoDiagonalPrincipal();
             textBox6.Text = m1.Descargar();
         }
+
+        private void diagonalPrincipalDerizqToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.DesplazamientoDiagonalPrincipal2();
+            textBox6.Text = m1.Descargar();
+        }
     }
 }
