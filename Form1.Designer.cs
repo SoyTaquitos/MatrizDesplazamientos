@@ -62,6 +62,8 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.diagonalPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagonalPrincipalDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.diagonalSecundariaDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,7 +96,9 @@
             this.columnaInferiorDerizqToolStripMenuItem,
             this.toolStripSeparator5,
             this.diagonalPrincipalToolStripMenuItem,
-            this.diagonalPrincipalDerizqToolStripMenuItem});
+            this.diagonalPrincipalDerizqToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.diagonalSecundariaDerizqToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.matriz1ToolStripMenuItem.Text = "Desplazamientos";
@@ -320,6 +324,18 @@
             this.diagonalPrincipalDerizqToolStripMenuItem.Text = "Diagonal Principal der-izq";
             this.diagonalPrincipalDerizqToolStripMenuItem.Click += new System.EventHandler(this.diagonalPrincipalDerizqToolStripMenuItem_Click);
             // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(291, 6);
+            // 
+            // diagonalSecundariaDerizqToolStripMenuItem
+            // 
+            this.diagonalSecundariaDerizqToolStripMenuItem.Name = "diagonalSecundariaDerizqToolStripMenuItem";
+            this.diagonalSecundariaDerizqToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.diagonalSecundariaDerizqToolStripMenuItem.Text = "Diagonal Secundaria der-izq";
+            this.diagonalSecundariaDerizqToolStripMenuItem.Click += new System.EventHandler(this.diagonalSecundariaDerizqToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,6 +401,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem diagonalPrincipalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diagonalPrincipalDerizqToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem diagonalSecundariaDerizqToolStripMenuItem;
     }
 }
 

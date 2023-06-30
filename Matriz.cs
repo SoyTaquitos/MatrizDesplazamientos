@@ -144,7 +144,7 @@ namespace MatrizDesplazamientos
             }
         }
 
-        public void DesplazamientoDiagonalPrincipal()
+        public void DiagonalPrincipal()
         {
             int i = 1;
             for (int d = 1; d <= f; d++)
@@ -152,7 +152,7 @@ namespace MatrizDesplazamientos
                 m[d, d] = i++;
             }
         }
-        public void DesplazamientoDiagonalPrincipal2()
+        public void DiagonalPrincipal2()
         {
             int i = 1;
             for (int d = f; d >= 1; d--)
@@ -160,6 +160,14 @@ namespace MatrizDesplazamientos
                 m[d, d] = i++;
             }
         }     
-            
+        public void DiagonalSecundaria()
+        {
+            int i = 1;
+            for (int d = 1; d <= f; d++)
+            {
+                m[d,c-d+1] = i++; 
+                // d = desplazamiento de las filas , c = nc , " c - d + 1 " mantiene "d == c"
+            }
+        }
     }
 }
