@@ -1,1 +1,9 @@
 D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\bin\Debug\MatrizDesplazamientos.exe.config
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\bin\Debug\MatrizDesplazamientos.exe
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\bin\Debug\MatrizDesplazamientos.pdb
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\obj\Debug\MatrizDesplazamientos.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\obj\Debug\MatrizDesplazamientos.Form1.resources
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\obj\Debug\MatrizDesplazamientos.Properties.Resources.resources
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\obj\Debug\MatrizDesplazamientos.csproj.GenerateResource.Cache
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\obj\Debug\MatrizDesplazamientos.exe
+D:\Visual Studio 2015\PROYECTOS\MatrizDesplazamientos\MatrizDesplazamientos\obj\Debug\MatrizDesplazamientos.pdb
