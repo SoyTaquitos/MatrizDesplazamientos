@@ -178,6 +178,44 @@ namespace MatrizDesplazamientos
                 // d = desplazamiento de las columnas, f = nf, " f - d + 1" mantiene "orden de filas descendente 4,3,2,1 "
             }
         }
-
+        public void TriangulInfIzq()
+        {
+            int i = 1;
+            for (int f1 = 2; f1 <= f; f1++)
+            {
+                for (int c1 = 1; c1 <= f1 -1; c1++)
+                {
+                    m[f1, c1] = i++;
+                }
+            }
+        }
+        public void OrdenamientoDeMatriz()
+        {
+            int i;
+            for (int fp = 1; fp <= f; fp++)
+            {
+                for (int cp = 1; cp <= c; cp++)
+                {
+                    for (int fd = fp; fd <= f; fd++)
+                    {
+                        if (fd == fp)
+                        {
+                            i = cp;
+                        }
+                        else
+                        {
+                            i = 1;
+                        }
+                        for (int cd = i; cd <= c; cd++)
+                        {
+                            if(m[fd,cd] < m[fp,cp])
+                            {
+                                this.Intercambiar(fd, cd, fp, cp);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
