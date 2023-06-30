@@ -166,8 +166,18 @@ namespace MatrizDesplazamientos
             for (int d = 1; d <= f; d++)
             {
                 m[d,c-d+1] = i++; 
-                // d = desplazamiento de las filas , c = nc , " c - d + 1 " mantiene "d == c"
+                // d = desplazamiento de las filas , c = nc , " c - d + 1 " mantiene "orden columnas ascendente 1,2,3,4"
             }
         }
+        public void DiagonalSecundaria2()
+        {
+            int i = 1;
+            for (int d = 1; d <= c; d++)
+            {
+                m[f - d + 1, d] = i++;
+                // d = desplazamiento de las columnas, f = nf, " f - d + 1" mantiene "orden de filas descendente 4,3,2,1 "
+            }
+        }
+
     }
 }

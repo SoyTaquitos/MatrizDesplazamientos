@@ -97,5 +97,11 @@ namespace MatrizDesplazamientos
             m1.DiagonalSecundaria();
             textBox6.Text = m1.Descargar();
         }
+
+        private void diagonalSecundariaIzqderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.DiagonalSecundaria2();
+            textBox6.Text = m1.Descargar();
+        }
     }
 }

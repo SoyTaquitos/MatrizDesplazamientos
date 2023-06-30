@@ -64,6 +64,7 @@
             this.diagonalPrincipalDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.diagonalSecundariaDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diagonalSecundariaIzqderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +99,7 @@
             this.diagonalPrincipalToolStripMenuItem,
             this.diagonalPrincipalDerizqToolStripMenuItem,
             this.toolStripSeparator6,
+            this.diagonalSecundariaIzqderToolStripMenuItem,
             this.diagonalSecundariaDerizqToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
@@ -336,6 +338,13 @@
             this.diagonalSecundariaDerizqToolStripMenuItem.Text = "Diagonal Secundaria der-izq";
             this.diagonalSecundariaDerizqToolStripMenuItem.Click += new System.EventHandler(this.diagonalSecundariaDerizqToolStripMenuItem_Click);
             // 
+            // diagonalSecundariaIzqderToolStripMenuItem
+            // 
+            this.diagonalSecundariaIzqderToolStripMenuItem.Name = "diagonalSecundariaIzqderToolStripMenuItem";
+            this.diagonalSecundariaIzqderToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.diagonalSecundariaIzqderToolStripMenuItem.Text = "Diagonal Secundaria izq-der";
+            this.diagonalSecundariaIzqderToolStripMenuItem.Click += new System.EventHandler(this.diagonalSecundariaIzqderToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,6 +412,7 @@
         private System.Windows.Forms.ToolStripMenuItem diagonalPrincipalDerizqToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem diagonalSecundariaDerizqToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diagonalSecundariaIzqderToolStripMenuItem;
     }
 }
 
