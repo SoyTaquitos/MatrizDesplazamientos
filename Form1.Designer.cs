@@ -50,6 +50,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.desplazamientoDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filaDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.filaInferiorIzqderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,9 +73,14 @@
             this.matriz1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cargarToolStripMenuItem,
             this.descargarToolStripMenuItem,
+            this.toolStripSeparator3,
             this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem,
             this.desplazamientoDeToolStripMenuItem,
-            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem});
+            this.toolStripSeparator1,
+            this.filaDerizqToolStripMenuItem,
+            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.filaInferiorIzqderToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
             this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.matriz1ToolStripMenuItem.Text = "Desplazamientos";
@@ -222,6 +232,35 @@
             this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem.Text = "Columna de arriba hacia abajo der-izq";
             this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem.Click += new System.EventHandler(this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem_Click);
             // 
+            // filaDerizqToolStripMenuItem
+            // 
+            this.filaDerizqToolStripMenuItem.Name = "filaDerizqToolStripMenuItem";
+            this.filaDerizqToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.filaDerizqToolStripMenuItem.Text = "Fila der-izq";
+            this.filaDerizqToolStripMenuItem.Click += new System.EventHandler(this.filaDerizqToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(291, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(291, 6);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(291, 6);
+            // 
+            // filaInferiorIzqderToolStripMenuItem
+            // 
+            this.filaInferiorIzqderToolStripMenuItem.Name = "filaInferiorIzqderToolStripMenuItem";
+            this.filaInferiorIzqderToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.filaInferiorIzqderToolStripMenuItem.Text = "Fila Inferior izq-der";
+            this.filaInferiorIzqderToolStripMenuItem.Click += new System.EventHandler(this.filaInferiorIzqderToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,6 +314,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem desplazamientoDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem columnaDeArribaHaciaAbajoDerizqToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filaDerizqToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem filaInferiorIzqderToolStripMenuItem;
     }
 }
 

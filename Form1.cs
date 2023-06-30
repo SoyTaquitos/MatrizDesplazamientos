@@ -49,5 +49,17 @@ namespace MatrizDesplazamientos
             m1.DesplazamientoPorColumna2();
             textBox6.Text = m1.Descargar();
         }
+
+        private void filaDerizqToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.DesplazamientoPorFila2();
+            textBox6.Text = m1.Descargar();
+        }
+
+        private void filaInferiorIzqderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.DesplazamientoPorFilaInfIzq();
+            textBox6.Text = m1.Descargar();
+        }
     }
 }
