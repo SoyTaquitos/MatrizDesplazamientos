@@ -49,6 +49,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.desplazamientoDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,10 +69,11 @@
             this.cargarToolStripMenuItem,
             this.descargarToolStripMenuItem,
             this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem,
-            this.desplazamientoDeToolStripMenuItem});
+            this.desplazamientoDeToolStripMenuItem,
+            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem});
             this.matriz1ToolStripMenuItem.Name = "matriz1ToolStripMenuItem";
-            this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.matriz1ToolStripMenuItem.Text = "Matriz 1";
+            this.matriz1ToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.matriz1ToolStripMenuItem.Text = "Desplazamientos";
             // 
             // cargarToolStripMenuItem
             // 
@@ -139,8 +141,8 @@
             // ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem
             // 
             this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem.Name = "ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem";
-            this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
-            this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem.Text = "Desplazamiento de Fila de Izquierda a derecha";
+            this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem.Text = "Fila  izq-der";
             this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem.Click += new System.EventHandler(this.ordenarFilaDeMenorAMayorDeIzquierdaADerechaToolStripMenuItem_Click);
             // 
             // label1
@@ -209,9 +211,16 @@
             // desplazamientoDeToolStripMenuItem
             // 
             this.desplazamientoDeToolStripMenuItem.Name = "desplazamientoDeToolStripMenuItem";
-            this.desplazamientoDeToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
-            this.desplazamientoDeToolStripMenuItem.Text = "Desplazamiento de Columna de arriba hacia abajo ";
+            this.desplazamientoDeToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.desplazamientoDeToolStripMenuItem.Text = "Columna de arriba hacia abajo de izq-der ";
             this.desplazamientoDeToolStripMenuItem.Click += new System.EventHandler(this.desplazamientoDeToolStripMenuItem_Click);
+            // 
+            // columnaDeArribaHaciaAbajoDerizqToolStripMenuItem
+            // 
+            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem.Name = "columnaDeArribaHaciaAbajoDerizqToolStripMenuItem";
+            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
+            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem.Text = "Columna de arriba hacia abajo der-izq";
+            this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem.Click += new System.EventHandler(this.columnaDeArribaHaciaAbajoDerizqToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -265,6 +274,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem desplazamientoDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem columnaDeArribaHaciaAbajoDerizqToolStripMenuItem;
     }
 }
 

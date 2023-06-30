@@ -43,5 +43,11 @@ namespace MatrizDesplazamientos
             m1.DesplazamientoPorColumnas();
             textBox6.Text = m1.Descargar();
         }
+
+        private void columnaDeArribaHaciaAbajoDerizqToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.DesplazamientoPorColumna2();
+            textBox6.Text = m1.Descargar();
+        }
     }
 }

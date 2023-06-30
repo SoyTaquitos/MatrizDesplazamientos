@@ -55,7 +55,7 @@ namespace MatrizDesplazamientos
             m[f1, c1] = m[f2, c2];
             m[f2, c2] = aux;
         }      
-        public void DesplazamientoPorFilas() //De izquierda a derecha
+        public void DesplazamientoPorFilas() //De izq-der
         {
             int i = 1;
             for (int f1 = 1; f1 <= f; f1++)
@@ -66,7 +66,7 @@ namespace MatrizDesplazamientos
                 }                                       
             }
         }
-        public void DesplazamientoPorColumnas() 
+        public void DesplazamientoPorColumnas() //De arriba hacia abajo izq-der
         {
             int i = 1;
             for (int c1 = 1; c1 <= c; c1++)
@@ -77,6 +77,16 @@ namespace MatrizDesplazamientos
                 }
             }
         }
-
+        public void DesplazamientoPorColumna2()
+        {
+            int i = 1;
+            for (int c1 = c; c1 >= 1; c1--)
+            {
+                for (int f1 = 1; f1 <= f; f1++)
+                {
+                    m[f1, c1] = i++;
+                }
+            }
+        }
     }
 }
