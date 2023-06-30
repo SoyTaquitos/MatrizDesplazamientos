@@ -110,6 +110,16 @@ namespace MatrizDesplazamientos
                 }
             }
         }
-
+        public void DesplazamientoPorColumnaInfIzq()
+        {
+            int i = 1;
+            for (int c1 = 1; c1 <= c; c1++)
+            {
+                for (int f1 = f; f1 >= 1; f1--)
+                {
+                    m[f1, c1] = i++;
+                }
+            }
+        }
     }
 }

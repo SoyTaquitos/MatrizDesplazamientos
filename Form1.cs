@@ -61,5 +61,12 @@ namespace MatrizDesplazamientos
             m1.DesplazamientoPorFilaInfIzq();
             textBox6.Text = m1.Descargar();
         }
+
+        private void colunaInferiorIzqderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.DesplazamientoPorColumnaInfIzq();
+            textBox6.Text = m1.Descargar();
+        }
+        
     }
 }
