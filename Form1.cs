@@ -16,10 +16,11 @@ namespace MatrizDesplazamientos
         {
             InitializeComponent();
         }
-        Matriz m1;
+        Matriz m1,m2;
         private void Form1_Load(object sender, EventArgs e)
         {
             m1 = new Matriz();
+            m2 = new Matriz();
         }
 
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,11 +110,20 @@ namespace MatrizDesplazamientos
             m1.TriangulInfIzq();
             textBox6.Text = m1.Descargar();
         }
-
-        private void ordenamientoDeMatrizDerizqToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ordenamientoDeMatrizToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            m1.OrdenamientoDeMatriz();
-            textBox6.Text = m1.Descargar();
+            m2.OrdenamientoDeMatriz();
+            textBox6.Text = m2.Descargar();
+        }
+
+        private void cargarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            m2.Cargar(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+        }
+
+        private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            textBox7.Text = m2.Descargar();
         }
     }
 }

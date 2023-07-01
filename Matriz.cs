@@ -189,6 +189,10 @@ namespace MatrizDesplazamientos
                 }
             }
         }
+        public void TriangularSupIzq()
+        {
+             
+        }
         public void OrdenamientoDeMatriz()
         {
             int i;
@@ -217,5 +221,7 @@ namespace MatrizDesplazamientos
                 }
             }
         }
+
+
     }
 }
