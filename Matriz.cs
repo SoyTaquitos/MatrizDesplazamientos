@@ -221,6 +221,25 @@ namespace MatrizDesplazamientos
                 }
             }
         }
+        public void Ordenamiento()
+        {
+            for (int fp = 1; fp <= f; fp++)
+            {
+                for (int cp = 1; cp <= c; cp++)
+                {
+                    for (int fd = fp; fd <= f; fd++)
+                    {
+                        for (int cd = cp; cd <= c; cd++)
+                        {
+                            if (m[fd,cd]<m[fp,cp])
+                            {
+                                this.Intercambiar(fd, cd, fp, cp);
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
 
     }

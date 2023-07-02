@@ -74,6 +74,7 @@
             this.ordenamientoDeMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.ordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -372,7 +373,8 @@
             this.cargarToolStripMenuItem1,
             this.descargarToolStripMenuItem1,
             this.toolStripSeparator9,
-            this.ordenamientoDeMatrizToolStripMenuItem});
+            this.ordenamientoDeMatrizToolStripMenuItem,
+            this.ordeToolStripMenuItem});
             this.ordenamientosToolStripMenuItem.Name = "ordenamientosToolStripMenuItem";
             this.ordenamientosToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.ordenamientosToolStripMenuItem.Text = "Ordenamientos";
@@ -419,6 +421,13 @@
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 16;
             this.label8.Text = "Matriz 2";
+            // 
+            // ordeToolStripMenuItem
+            // 
+            this.ordeToolStripMenuItem.Name = "ordeToolStripMenuItem";
+            this.ordeToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.ordeToolStripMenuItem.Text = "Orde";
+            this.ordeToolStripMenuItem.Click += new System.EventHandler(this.ordeToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -498,6 +507,7 @@
         private System.Windows.Forms.ToolStripMenuItem ordenamientoDeMatrizToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolStripMenuItem ordeToolStripMenuItem;
     }
 }
 

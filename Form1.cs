@@ -121,6 +121,12 @@ namespace MatrizDesplazamientos
             m2.Cargar(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));
         }
 
+        private void ordeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.Ordenamiento();
+            textBox6.Text = m2.Descargar();
+        }
+
         private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             textBox7.Text = m2.Descargar();
