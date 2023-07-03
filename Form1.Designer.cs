@@ -78,7 +78,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.triangularInferiorDerecha2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -278,8 +277,7 @@
             this.ordeToolStripMenuItem,
             this.senToolStripMenuItem,
             this.toolStripSeparator10,
-            this.triInfDErToolStripMenuItem,
-            this.triangularInferiorDerecha2ToolStripMenuItem});
+            this.triInfDErToolStripMenuItem});
             this.ordenamientosToolStripMenuItem.Name = "ordenamientosToolStripMenuItem";
             this.ordenamientosToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.ordenamientosToolStripMenuItem.Text = "Ordenamientos";
@@ -287,52 +285,52 @@
             // cargarToolStripMenuItem1
             // 
             this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
-            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(221, 22);
+            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
             this.cargarToolStripMenuItem1.Text = "Cargar ";
             this.cargarToolStripMenuItem1.Click += new System.EventHandler(this.cargarToolStripMenuItem1_Click);
             // 
             // descargarToolStripMenuItem1
             // 
             this.descargarToolStripMenuItem1.Name = "descargarToolStripMenuItem1";
-            this.descargarToolStripMenuItem1.Size = new System.Drawing.Size(221, 22);
+            this.descargarToolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
             this.descargarToolStripMenuItem1.Text = "Descargar";
             this.descargarToolStripMenuItem1.Click += new System.EventHandler(this.descargarToolStripMenuItem1_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(218, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(209, 6);
             // 
             // ordenamientoDeMatrizToolStripMenuItem
             // 
             this.ordenamientoDeMatrizToolStripMenuItem.Name = "ordenamientoDeMatrizToolStripMenuItem";
-            this.ordenamientoDeMatrizToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.ordenamientoDeMatrizToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.ordenamientoDeMatrizToolStripMenuItem.Text = "Total";
             this.ordenamientoDeMatrizToolStripMenuItem.Click += new System.EventHandler(this.ordenamientoDeMatrizToolStripMenuItem_Click);
             // 
             // ordeToolStripMenuItem
             // 
             this.ordeToolStripMenuItem.Name = "ordeToolStripMenuItem";
-            this.ordeToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.ordeToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.ordeToolStripMenuItem.Text = "Columnas ";
             this.ordeToolStripMenuItem.Click += new System.EventHandler(this.ordeToolStripMenuItem_Click);
             // 
             // senToolStripMenuItem
             // 
             this.senToolStripMenuItem.Name = "senToolStripMenuItem";
-            this.senToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.senToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.senToolStripMenuItem.Text = "Senozoidal";
             this.senToolStripMenuItem.Click += new System.EventHandler(this.senToolStripMenuItem_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(218, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(209, 6);
             // 
             // triInfDErToolStripMenuItem
             // 
             this.triInfDErToolStripMenuItem.Name = "triInfDErToolStripMenuItem";
-            this.triInfDErToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.triInfDErToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.triInfDErToolStripMenuItem.Text = "Triangular inferior derecha";
             this.triInfDErToolStripMenuItem.Click += new System.EventHandler(this.triInfDErToolStripMenuItem_Click);
             // 
@@ -456,13 +454,6 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Matriz 2";
             // 
-            // triangularInferiorDerecha2ToolStripMenuItem
-            // 
-            this.triangularInferiorDerecha2ToolStripMenuItem.Name = "triangularInferiorDerecha2ToolStripMenuItem";
-            this.triangularInferiorDerecha2ToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
-            this.triangularInferiorDerecha2ToolStripMenuItem.Text = "Triangular inferior derecha 2";
-            this.triangularInferiorDerecha2ToolStripMenuItem.Click += new System.EventHandler(this.triangularInferiorDerecha2ToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -545,7 +536,6 @@
         private System.Windows.Forms.ToolStripMenuItem senToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem triInfDErToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
-        private System.Windows.Forms.ToolStripMenuItem triangularInferiorDerecha2ToolStripMenuItem;
     }
 }
 
