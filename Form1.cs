@@ -139,6 +139,12 @@ namespace MatrizDesplazamientos
             textBox6.Text = m2.Descargar();
         }
 
+        private void triangularInferiorDerecha2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.OrdenamientoTriangularInferiorDerecha2();
+            textBox6.Text = m2.Descargar();
+        }
+
         private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             textBox7.Text = m2.Descargar();

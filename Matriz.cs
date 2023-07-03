@@ -297,7 +297,27 @@ namespace MatrizDesplazamientos
                 }
             }
         }
-
+        public void OrdenamientoTriangularInferiorDerecha2()
+        {
+            int dig;
+            for (int c1 = 2; c1 <= c; c1++)
+            {
+                for (int f1 = f; f1 >= f - c1 + 2 ; f1--)
+                {
+                    for (int c2 = c1; c2 <= c; c2++)
+                    {
+                        dig = (c1 == c2) ? (f1) : (f - c1 + 2);
+                        for (int f2 = dig; f2 >= f; f2--)
+                        {
+                            if(m[f1,c1] > m[f2,c2])
+                            {
+                                this.Intercambiar(f1, c1, f2, c2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
 
 
