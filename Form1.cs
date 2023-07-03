@@ -123,7 +123,19 @@ namespace MatrizDesplazamientos
 
         private void ordeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            m2.Ordenamiento();
+            m2.OrdenamientoColumna();
+            textBox6.Text = m2.Descargar();
+        }
+
+        private void senToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.OrdenSen();
+            textBox6.Text = m2.Descargar();
+        }
+
+        private void triInfDErToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.OrdenamientoTriangularInferiorDererecha();
             textBox6.Text = m2.Descargar();
         }
 

@@ -221,25 +221,84 @@ namespace MatrizDesplazamientos
                 }
             }
         }
-        public void Ordenamiento()
+        public void OrdenamientoColumna()
         {
-            for (int fp = 1; fp <= f; fp++)
+            int i;
+            for (int cp = 1; cp <= c; cp++)
             {
-                for (int cp = 1; cp <= c; cp++)
+                for (int fp = 1; fp <= f; fp++)
                 {
-                    for (int fd = fp; fd <= f; fd++)
+                    for (int cd = cp; cd <= c; cd++)
                     {
-                        for (int cd = cp; cd <= c; cd++)
+                        if (cp == cd)
                         {
-                            if (m[fd,cd]<m[fp,cp])
+                            i = fp;
+                        }
+                        else
+                        {
+                            i = 1;
+                        }
+                        for (int fd = i; fd <= f; fd++)
+                        {
+                            if(m[fd,cd] < m[fp,cp])
                             {
                                 this.Intercambiar(fd, cd, fp, cp);
+                            }
+                            
+                        }
+                    }
+                }
+            }           
+        }
+        public void InterCol(int columna)
+        {
+            for (int f1 = 1; f1 <= f - 1; f1++)
+            {
+                for (int f2 = f; f2 >= f1 + 1; f2--)
+                {
+                    if(m[f2,columna] > m[f2 -1,columna])
+                    {
+                        this.Intercambiar(f2, columna, f2 -1, columna);
+                    }
+                }
+            }
+        }
+     
+        public void OrdenSen()
+        {
+            this.OrdenamientoColumna();
+            for (int c1 = 1; c1 <= c; c1++)
+            {
+                if (c1 % 2 == 1)
+                {
+                    this.InterCol(c1);
+                }
+            }
+            
+        }        
+        public void OrdenamientoTriangularInferiorDererecha()
+        {
+            int co;
+            for (int f1 = 2; f1 <= f; f1++)
+            {
+                for (int c1 = c - f1 + 2; c1 <= c; c1++)
+                {
+                    for (int f2 = f1; f2 <= f; f2++)
+                    {
+                        co = (f2 == f1) ? (c1) : (c - f2 + 2);
+                        for (int c2 = co; c2 <= c; c2++)
+                        {
+                            if (m[f1,c1] > m[f2,c2])
+                            {
+                                this.Intercambiar(f1, c1, f2, c2);
                             }
                         }
                     }
                 }
             }
         }
+
+
 
 
     }

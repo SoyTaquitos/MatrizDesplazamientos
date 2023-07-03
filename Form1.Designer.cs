@@ -54,6 +54,12 @@
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.triangularInferiorIzquierdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.ordenamientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.descargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.ordenamientoDeMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -67,14 +73,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.ordenamientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.descargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.ordenamientoDeMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.ordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.senToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.triInfDErToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -264,6 +267,54 @@
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(291, 6);
             // 
+            // ordenamientosToolStripMenuItem
+            // 
+            this.ordenamientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargarToolStripMenuItem1,
+            this.descargarToolStripMenuItem1,
+            this.toolStripSeparator9,
+            this.ordenamientoDeMatrizToolStripMenuItem,
+            this.ordeToolStripMenuItem,
+            this.senToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.triInfDErToolStripMenuItem});
+            this.ordenamientosToolStripMenuItem.Name = "ordenamientosToolStripMenuItem";
+            this.ordenamientosToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.ordenamientosToolStripMenuItem.Text = "Ordenamientos";
+            // 
+            // cargarToolStripMenuItem1
+            // 
+            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
+            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.cargarToolStripMenuItem1.Text = "Cargar ";
+            this.cargarToolStripMenuItem1.Click += new System.EventHandler(this.cargarToolStripMenuItem1_Click);
+            // 
+            // descargarToolStripMenuItem1
+            // 
+            this.descargarToolStripMenuItem1.Name = "descargarToolStripMenuItem1";
+            this.descargarToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.descargarToolStripMenuItem1.Text = "Descargar";
+            this.descargarToolStripMenuItem1.Click += new System.EventHandler(this.descargarToolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(200, 6);
+            // 
+            // ordenamientoDeMatrizToolStripMenuItem
+            // 
+            this.ordenamientoDeMatrizToolStripMenuItem.Name = "ordenamientoDeMatrizToolStripMenuItem";
+            this.ordenamientoDeMatrizToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.ordenamientoDeMatrizToolStripMenuItem.Text = "Total";
+            this.ordenamientoDeMatrizToolStripMenuItem.Click += new System.EventHandler(this.ordenamientoDeMatrizToolStripMenuItem_Click);
+            // 
+            // ordeToolStripMenuItem
+            // 
+            this.ordeToolStripMenuItem.Name = "ordeToolStripMenuItem";
+            this.ordeToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.ordeToolStripMenuItem.Text = "Columnas ";
+            this.ordeToolStripMenuItem.Click += new System.EventHandler(this.ordeToolStripMenuItem_Click);
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -367,44 +418,6 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Vista del desplazamiento";
             // 
-            // ordenamientosToolStripMenuItem
-            // 
-            this.ordenamientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cargarToolStripMenuItem1,
-            this.descargarToolStripMenuItem1,
-            this.toolStripSeparator9,
-            this.ordenamientoDeMatrizToolStripMenuItem,
-            this.ordeToolStripMenuItem});
-            this.ordenamientosToolStripMenuItem.Name = "ordenamientosToolStripMenuItem";
-            this.ordenamientosToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.ordenamientosToolStripMenuItem.Text = "Ordenamientos";
-            // 
-            // cargarToolStripMenuItem1
-            // 
-            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
-            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-            this.cargarToolStripMenuItem1.Text = "Cargar ";
-            this.cargarToolStripMenuItem1.Click += new System.EventHandler(this.cargarToolStripMenuItem1_Click);
-            // 
-            // descargarToolStripMenuItem1
-            // 
-            this.descargarToolStripMenuItem1.Name = "descargarToolStripMenuItem1";
-            this.descargarToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-            this.descargarToolStripMenuItem1.Text = "Descargar";
-            this.descargarToolStripMenuItem1.Click += new System.EventHandler(this.descargarToolStripMenuItem1_Click);
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(200, 6);
-            // 
-            // ordenamientoDeMatrizToolStripMenuItem
-            // 
-            this.ordenamientoDeMatrizToolStripMenuItem.Name = "ordenamientoDeMatrizToolStripMenuItem";
-            this.ordenamientoDeMatrizToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.ordenamientoDeMatrizToolStripMenuItem.Text = "Ordenamiento de Matriz";
-            this.ordenamientoDeMatrizToolStripMenuItem.Click += new System.EventHandler(this.ordenamientoDeMatrizToolStripMenuItem_Click);
-            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(392, 143);
@@ -422,12 +435,24 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Matriz 2";
             // 
-            // ordeToolStripMenuItem
+            // senToolStripMenuItem
             // 
-            this.ordeToolStripMenuItem.Name = "ordeToolStripMenuItem";
-            this.ordeToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.ordeToolStripMenuItem.Text = "Orde";
-            this.ordeToolStripMenuItem.Click += new System.EventHandler(this.ordeToolStripMenuItem_Click);
+            this.senToolStripMenuItem.Name = "senToolStripMenuItem";
+            this.senToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.senToolStripMenuItem.Text = "Senozoidal";
+            this.senToolStripMenuItem.Click += new System.EventHandler(this.senToolStripMenuItem_Click);
+            // 
+            // triInfDErToolStripMenuItem
+            // 
+            this.triInfDErToolStripMenuItem.Name = "triInfDErToolStripMenuItem";
+            this.triInfDErToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.triInfDErToolStripMenuItem.Text = "Triangular inferior derecha";
+            this.triInfDErToolStripMenuItem.Click += new System.EventHandler(this.triInfDErToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(209, 6);
             // 
             // Form1
             // 
@@ -508,6 +533,9 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolStripMenuItem ordeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem senToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem triInfDErToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
     }
 }
 
