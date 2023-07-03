@@ -276,7 +276,7 @@ namespace MatrizDesplazamientos
             }
             
         }        
-        public void OrdenamientoTriangularInferiorDererecha()
+        public void TriangularInferiorDerechaIzq_Der()
         {
             int co;
             for (int f1 = 2; f1 <= f; f1++)
@@ -296,9 +296,50 @@ namespace MatrizDesplazamientos
                     }
                 }
             }
+        }//Triangulares Superiores Derecha 
+        public void TriangularSuperiorDerecha1()
+        {
+            int dig;
+            for (int f1 = 1; f1 <= f; f1++)
+            {
+                for (int c1 = f1 + 1; c1 <= c; c1++)
+                {
+                    for (int f2 = f1; f2 <= f; f2++)
+                    {
+                        dig = (f2 == f1) ? (c1) : (f2 +1);
+                        for (int c2 = dig; c2 <= c; c2++)
+                        {
+                            if(m[f1,c1] > m[f2,c2])
+                            {
+                                this.Intercambiar(f1, c1, f2, c2);
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
-        
-
+        public void TriangularSuperiorDerecha2()
+        {
+            int dig;
+            for (int f1 = f - 1; f1 >= 1; f1--)
+            {
+                for (int c1 = f1 + 1; c1 <= c; c1--)
+                {
+                    for (int f2 = f1; f2 >= 1; f2--)
+                    {
+                        dig = (f2 == f1) ? (c1) : (f2 + 1);
+                        for (int c2 = dig; c2 <= c ; c2++)
+                        {
+                            if (m[f1,c1] > m[f2,c2])
+                            {
+                                this.Intercambiar(f1, c1, f2, c2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
 
 

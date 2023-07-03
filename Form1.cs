@@ -135,13 +135,25 @@ namespace MatrizDesplazamientos
 
         private void triInfDErToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            m2.OrdenamientoTriangularInferiorDererecha();
+            m2.TriangularInferiorDerechaIzq_Der();
             textBox6.Text = m2.Descargar();
         }
 
         private void triangularInferiorDerecha2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void triangularInferiorDerecha2ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            m2.TriangularSuperiorDerecha1();
+            textBox6.Text = m2.Descargar();
+        }
+
+        private void triangularSuperiorDerecha2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.TriangularSuperiorDerecha2();
+            textBox6.Text = m2.Descargar();
         }
 
         private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
