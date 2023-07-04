@@ -162,6 +162,11 @@ namespace MatrizDesplazamientos
             textBox6.Text = m2.Descargar();
         }
 
+        private void ordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+         
+        }
+
         private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             textBox7.Text = m2.Descargar();

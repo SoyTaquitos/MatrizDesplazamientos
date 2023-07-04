@@ -322,7 +322,7 @@ namespace MatrizDesplazamientos
                     }
                 }
             }
-        }    
+        }         
         //Triangulares  
         public void TriangularInferiorDerechaIzq_Der()
         {

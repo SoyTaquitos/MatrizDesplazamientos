@@ -61,6 +61,7 @@
             this.ordenamientoDeMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.senToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.senozoidal2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.triInfDErToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
@@ -81,7 +82,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.senozoidal2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -330,6 +330,13 @@
             this.senToolStripMenuItem.Text = "Senozoidal";
             this.senToolStripMenuItem.Click += new System.EventHandler(this.senToolStripMenuItem_Click);
             // 
+            // senozoidal2ToolStripMenuItem
+            // 
+            this.senozoidal2ToolStripMenuItem.Name = "senozoidal2ToolStripMenuItem";
+            this.senozoidal2ToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.senozoidal2ToolStripMenuItem.Text = "Senozoidal 2";
+            this.senozoidal2ToolStripMenuItem.Click += new System.EventHandler(this.senozoidal2ToolStripMenuItem_Click);
+            // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
@@ -480,13 +487,6 @@
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 16;
             this.label8.Text = "Matriz 2";
-            // 
-            // senozoidal2ToolStripMenuItem
-            // 
-            this.senozoidal2ToolStripMenuItem.Name = "senozoidal2ToolStripMenuItem";
-            this.senozoidal2ToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.senozoidal2ToolStripMenuItem.Text = "Senozoidal 2";
-            this.senozoidal2ToolStripMenuItem.Click += new System.EventHandler(this.senozoidal2ToolStripMenuItem_Click);
             // 
             // Form1
             // 
