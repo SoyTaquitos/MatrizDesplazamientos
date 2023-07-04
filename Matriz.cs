@@ -189,10 +189,7 @@ namespace MatrizDesplazamientos
                 }
             }
         }
-        public void TriangularSupIzq()
-        {
-             
-        }
+
         public void OrdenamientoDeMatriz()
         {
             int i;
@@ -218,6 +215,17 @@ namespace MatrizDesplazamientos
                             }
                         }
                     }
+                }
+            }
+        }
+        public void OrdenSen()
+        {
+            this.OrdenamientoColumna();
+            for (int c1 = 1; c1 <= c; c1++)
+            {
+                if (c1 % 2 == 1)
+                {
+                    this.InterCol(c1);
                 }
             }
         }
@@ -262,20 +270,60 @@ namespace MatrizDesplazamientos
                     }
                 }
             }
-        }
-     
-        public void OrdenSen()
+        }      
+        public void OrdenSen2()
         {
-            this.OrdenamientoColumna();
-            for (int c1 = 1; c1 <= c; c1++)
+            this.OrdenamientoDeMatriz2();
+            for (int f1 = 1; f1 <= f; f1++)
             {
-                if (c1 % 2 == 1)
+                if (f1 % 2 == 1)
                 {
-                    this.InterCol(c1);
+                    this.OrdenarFila(f1);
                 }
             }
-            
-        }        
+        }
+        public void OrdenamientoDeMatriz2()
+        {
+            int i;
+            for (int fp = 1; fp <= f; fp++)
+            {
+                for (int cp = 1; cp <= c; cp++)
+                {
+                    for (int fd = fp; fd <= f; fd++)
+                    {
+                        if (fd == fp)
+                        {
+                            i = cp;
+                        }
+                        else
+                        {
+                            i = 1;
+                        }
+                        for (int cd = i; cd <= c; cd++)
+                        {
+                            if (m[fd, cd] > m[fp, cp])
+                            {
+                                this.Intercambiar(fd, cd, fp, cp);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        public void OrdenarFila(int f1)
+        {
+            for (int i = 1; i <= c; i++)
+            {
+                for (int j = 1; j <= c; j++)
+                {
+                    if (m[f1, i] < m[f1,j] )
+                    {
+                        this.Intercambiar(f1, i, f1, j);
+                    }
+                }
+            }
+        }    
+        //Triangulares  
         public void TriangularInferiorDerechaIzq_Der()
         {
             int co;
@@ -340,8 +388,30 @@ namespace MatrizDesplazamientos
                 }
             }
         }
+        public void ChuflinesParcial()
+        {
+            int i;
+            for (int fp = f - 1; fp >= 1; fp--)
+            {
+                for (int cp = 1; cp <= c - fp; cp++)
+                {
+                    for (int fd = fp; fd >= 1; fd--)
+                    {
+                        i = (fp == fd) ? (cp) : (1);
+                        for (int cd = i; cd <= c - fd; cd++)
+                        {
+                            if ((!(m[fp, cp] % 2 == 0) && (m[fd, cd] % 2 == 0)) ||
+                             (!(m[fp, cp] % 2 == 0) && !(m[fd, cd] % 2 == 0) && m[fd, cd] < m[fp, cp]) || (
+                               (m[fp, cp] % 2 == 0) && (m[fp, cp] % 2 == 0) && m[fd, cd] < m[fp, cp]))
 
-
-
+                                this.Intercambiar(fd, cd, fp, cp);
+                        }
+                    }
+                }
+            }
+        }  
+        
+        
+                                                                                            
     }
 }

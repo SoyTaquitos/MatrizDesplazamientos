@@ -156,6 +156,12 @@ namespace MatrizDesplazamientos
             textBox6.Text = m2.Descargar();
         }
 
+        private void senozoidal2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.OrdenSen2();
+            textBox6.Text = m2.Descargar();
+        }
+
         private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             textBox7.Text = m2.Descargar();
