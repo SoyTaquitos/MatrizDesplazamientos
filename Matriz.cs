@@ -209,7 +209,7 @@ namespace MatrizDesplazamientos
                         }
                         for (int cd = i; cd <= c; cd++)
                         {
-                            if(m[fd,cd] < m[fp,cp])
+                            if(m[fd,cd] > m[fp,cp])
                             {
                                 this.Intercambiar(fd, cd, fp, cp);
                             }
@@ -388,30 +388,71 @@ namespace MatrizDesplazamientos
                 }
             }
         }
-        public void ChuflinesParcial()
+        
+        //Repechaje 05/07/2023     
+        public void Chuflines()
         {
             int i;
-            for (int fp = f - 1; fp >= 1; fp--)
-            {
-                for (int cp = 1; cp <= c - fp; cp++)
-                {
-                    for (int fd = fp; fd >= 1; fd--)
+            for (int c1 = 2; c1 <= c; c1++)  
+                for (int f1 = f - c1 + 2 ; f1 <= f; f1++)
+                    for (int c2 = c1; c2 <= c; c2++)
                     {
-                        i = (fp == fd) ? (cp) : (1);
-                        for (int cd = i; cd <= c - fd; cd++)
+                        i = (c1 == c2) ? (f1) : (f - c2 + 2 );
+                        for (int f2 = i; f2 <= f; f2++)
                         {
-                            if ((!(m[fp, cp] % 2 == 0) && (m[fd, cd] % 2 == 0)) ||
-                             (!(m[fp, cp] % 2 == 0) && !(m[fd, cd] % 2 == 0) && m[fd, cd] < m[fp, cp]) || (
-                               (m[fp, cp] % 2 == 0) && (m[fp, cp] % 2 == 0) && m[fd, cd] < m[fp, cp]))
-
-                                this.Intercambiar(fd, cd, fp, cp);
+                            if(!(m[f1,c1] % 2 == 0) && (m[f2,c2] % 2 == 0) ||
+                               (m[f1,c1] % 2 == 0) && (m[f2,c2] % 2 == 0) && m[f1,c1] < m[f2,c2] ||
+                               !(m[f1, c1] % 2 == 0) && !(m[f2, c2] % 2 == 0) && m[f1, c1] < m[f2, c2] )
+                            {
+                                this.Intercambiar(f1, c1, f2, c2);
+                            }
                         }
+                    }
+            //this.Intercambiar(2, 4, 3, 3);    XD
+            //this.Intercambiar(3, 4, 4, 3);    XD
+            //this.Intercambiar(4, 4, 2, 4);    XD                     
+        }
+        public void Chuflines2(int fi ,int ff)
+        {
+            int a, b;
+            for (int i = fi; i >= ff - 1; i++)
+            {
+                for (int ii = i + 1; ii <= c; ii++)
+                {
+                    a = this.GetCantEle(i);
+                    b = this.GetCantEle(ii);
+                    if ( a < b)
+                    {
+                        this.interfilas(i, ii);
                     }
                 }
             }
-        }  
-        
-        
-                                                                                            
+        }
+        public int GetCantEle(int fila)
+        {
+            int cant = 0;
+            int ele;
+            for (int c1 = 1; c1 <= this.c -1; c1++)
+            {
+                ele = m[fila,c1];
+                if(ele == m[fila,c1 + 1])
+                {
+                    cant++;
+                }
+            }
+            return cant;
+        }
+        public void interfilas(int f1,int f2)
+        {
+            for (int i = 1; i <= c; i++)
+            {
+                this.Intercambiar(f1, i, f2, i);
+            }
+        }
+
+
+
+
+
     }
 }

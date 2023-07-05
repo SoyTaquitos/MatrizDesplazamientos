@@ -167,6 +167,18 @@ namespace MatrizDesplazamientos
          
         }
 
+        private void noseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.Chuflines();
+            textBox6.Text = m2.Descargar();
+        }
+
+        private void dwsdsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m2.Chuflines2(int.Parse(textBox1.Text), int.Parse(textBox2.Text));
+            textBox6.Text = m2.Descargar();
+        }
+
         private void descargarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             textBox7.Text = m2.Descargar();

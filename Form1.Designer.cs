@@ -82,6 +82,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.noseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dwsdsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -285,7 +287,9 @@
             this.triInfDErToolStripMenuItem,
             this.toolStripSeparator11,
             this.triangularInferiorDerecha2ToolStripMenuItem,
-            this.triangularSuperiorDerecha2ToolStripMenuItem});
+            this.triangularSuperiorDerecha2ToolStripMenuItem,
+            this.noseToolStripMenuItem,
+            this.dwsdsToolStripMenuItem});
             this.ordenamientosToolStripMenuItem.Name = "ordenamientosToolStripMenuItem";
             this.ordenamientosToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.ordenamientosToolStripMenuItem.Text = "Ordenamientos";
@@ -488,6 +492,20 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Matriz 2";
             // 
+            // noseToolStripMenuItem
+            // 
+            this.noseToolStripMenuItem.Name = "noseToolStripMenuItem";
+            this.noseToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.noseToolStripMenuItem.Text = "Nose";
+            this.noseToolStripMenuItem.Click += new System.EventHandler(this.noseToolStripMenuItem_Click);
+            // 
+            // dwsdsToolStripMenuItem
+            // 
+            this.dwsdsToolStripMenuItem.Name = "dwsdsToolStripMenuItem";
+            this.dwsdsToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.dwsdsToolStripMenuItem.Text = "dwsds";
+            this.dwsdsToolStripMenuItem.Click += new System.EventHandler(this.dwsdsToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,6 +592,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripMenuItem triangularSuperiorDerecha2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem senozoidal2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dwsdsToolStripMenuItem;
     }
 }
 
